@@ -5,6 +5,7 @@ import DataBindingInputText from "@/views/DataBindingInputText";
 import DataBindingList from "@/views/DataBindingList";
 import EventBinding from "@/views/EventBinding";
 import ComputedWatch from "@/views/ComputedWatch";
+import NestedComponent from "@/views/NestedComponent";
 
 const routes = [
   {
@@ -44,6 +45,11 @@ const routes = [
     path: '/computedWatch',
     name: 'ComputedWatch',
     component: ComputedWatch
+  },
+  {
+    path: '/nested',
+    name: 'NestedComponent',
+    component: NestedComponent
   }
 ]
 

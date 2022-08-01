@@ -4,6 +4,7 @@ import DataBinding from "@/views/DataBinding";
 import DataBindingInputText from "@/views/DataBindingInputText";
 import DataBindingList from "@/views/DataBindingList";
 import EventBinding from "@/views/EventBinding";
+import ComputedWatch from "@/views/ComputedWatch";
 
 const routes = [
   {
@@ -38,6 +39,11 @@ const routes = [
     path: '/eventBinding',
     name: 'EventBinding',
     component: EventBinding
+  },
+  {
+    path: '/computedWatch',
+    name: 'ComputedWatch',
+    component: ComputedWatch
   }
 ]
 

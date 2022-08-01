@@ -34,14 +34,17 @@ export default {
   name: "DataBindingList",
   data(){
     return{
-      productList: [
-        {"product_name": "기계식키보드", "price": 25000, "category":"노트북/태블릿", "delivery_price":5000},
-        {"product_name": "무선마우스", "price": 12000, "category":"노트북/태블릿", "delivery_price":5000},
-        {"product_name": "태블릿거치대", "price": 32000, "category":"노트북/태블릿", "delivery_price":5000},
-        {"product_name": "아이패드", "price": 725000, "category":"노트북/태블릿", "delivery_price":5000},
-      ],
+      productList: [],
       type: 'A'
     };
+  },
+  created() {
+    this.getList();
+  },
+  methods: {
+    async getList(){
+      this.productList = await this.$api("https://bcd33e38-9719-4b81-aa76-7e5a63c52ef9.mock.pstmn.io/list", "get");
+    }
   }
 }
 </script>

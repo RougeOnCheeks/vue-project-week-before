@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import DataBinding from "@/views/DataBinding";
 import DataBindingInputText from "@/views/DataBindingInputText";
 import DataBindingList from "@/views/DataBindingList";
+import EventBinding from "@/views/EventBinding";
 
 const routes = [
   {
@@ -32,6 +33,11 @@ const routes = [
     path: '/databindingList',
     name: 'DataBindingList',
     component: DataBindingList
+  },
+  {
+    path: '/eventBinding',
+    name: 'EventBinding',
+    component: EventBinding
   }
 ]
 

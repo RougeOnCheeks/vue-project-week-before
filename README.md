@@ -137,3 +137,11 @@ components - 다른 vue 파일에서 호출해서 공통으로 사용할 수 있
         2. 초기에 html 블록을 생성하는데에 자원을 사용
 
     → 자주 toggle이 일어나면 v-show 사용, toggle 빈도 적으면 v-if 사용하는것이 좋다.
+13. 이벤트 처리
+    1. v-on / @click
+        1. 사용예시 : *`<button type="button" @click="increaseCounter">Add 1</button>`*
+    2. v-change / @change
+14. key 이벤트
+    1. 키보드 입력되는지 감지하여 함수 호출
+        1. 사용예시: `<input @keyup.enter=”submit”/>`
+        2. `.enter` `.tab` `.delete` `.esc` `.space` `.up` `.down` `.left` `.right`

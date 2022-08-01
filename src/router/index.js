@@ -23,8 +23,8 @@ const routes = [
     component: DataBinding
   },
   {
-    path: '/databindingInput',
-    name: 'DataBindingInputText',
+    path: '/databindingExamples',
+    name: 'DataBindingExamples',
     component: DataBindingInputText
   },
 ]

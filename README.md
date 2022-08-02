@@ -5,7 +5,7 @@
 - MVVM 패턴 사용(Model-View-ViewModel)
     - View(HTML DOM)와 Model(JavaScript) 중간에 ViewModel을 둠으로써 데이터 바인딩 처리 및 가상 DOM을 통한 성능 및 개발의 편의성 제공
 
-  ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6800b355-b0e8-4b80-855c-742a4380508e/Untitled.png)
+    ![MVVM pattern](images/vuejs-image.png)
 
 - 컴포넌트
     - View를 재사용할 수 있는 구조로 개발
@@ -145,3 +145,30 @@ components - 다른 vue 파일에서 호출해서 공통으로 사용할 수 있
     1. 키보드 입력되는지 감지하여 함수 호출
         1. 사용예시: `<input @keyup.enter=”submit”/>`
         2. `.enter` `.tab` `.delete` `.esc` `.space` `.up` `.down` `.left` `.right`
+### computed와 watch
+
+1. computed
+    1. 데이터 값에 변경이 일어나는지 감시
+    2. 기존에 정의된 데이터 값을 기반으로 새로운 데이터 값을 활용하기 위해 사용
+2. watch
+    1. 데이터 값에 변경이 일어나는지 감시
+    2. watch에 정의된 데이터 값 하나만을 감시하기 위한 용도로 사용
+    3. 실제 데이터 변경이 일어나기 전까지는 실행되지 않음
+    4. 초기에 할당된 값이 반드시 변경이 일어나야만 watch가 실행
+
+### 서버 데이터 바인딩
+
+1. Axios
+    1. 서버와 데이터를 송수신 할 수 있는 HTTP 비동기 통신 라이브러리. Promise 객체 형태로 값 return
+    2. 설치 : `npm install axios —save`
+2. Mixins
+    1. 공통 함수 구현해서 각각의 컴포넌트에서 호출해서 사용하도록 함
+
+### 컴포넌트 심화 학습
+
+- [예제코드](https://github.com/RougeOnCheeks/vue-project-week-before/blob/main/src/components/PageTitle.vue)
+
+### Provide/Inject
+
+- [예제코드](https://github.com/RougeOnCheeks/vue-project-week-before/commit/7ec186bf97dbbeae9682bdc9f742fd41dd67c738)
+- 어떤 부모 컴포넌트에서 전달되는지 확인이 안된다는 단점

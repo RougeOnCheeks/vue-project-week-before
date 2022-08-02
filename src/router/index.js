@@ -6,6 +6,7 @@ import DataBindingList from "@/views/DataBindingList";
 import EventBinding from "@/views/EventBinding";
 import ComputedWatch from "@/views/ComputedWatch";
 import NestedComponent from "@/views/NestedComponent";
+import ProvideInject from "@/views/ProvideInject";
 
 const routes = [
   {
@@ -50,6 +51,11 @@ const routes = [
     path: '/nested',
     name: 'NestedComponent',
     component: NestedComponent
+  },
+  {
+    path: '/provideInject',
+    name: 'ProvideInject',
+    component: ProvideInject
   }
 ]
 
